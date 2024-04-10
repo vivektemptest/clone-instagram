@@ -60,6 +60,24 @@ let showCreatePost = ref(false);
                 <Link href="/">
                     <MenuItem iconString="Home" class="mb-4"/>
                 </Link>
+                <MenuItem iconString="Search" class="mb-4"/>
+                <MenuItem iconString="Explore" class="mb-4"/>
+                <MenuItem iconString="Messages" class="mb-4"/>
+                <MenuItem iconString="Notification" class="mb-4"/>
+                <MenuItem iconString="Create" class="mb-4"/>
+                <MenuItem iconString="Profile" class="mb-4"/>
+            </div>
+            <Link href="/" class="absolute bottom-0 px-3 w-full">
+                <MenuItem iconString="Log out" class="mb-4"/>
+            </Link>
+        </div>
+
+        <div class="flex lg:justify-between bg-white h-full w-[100%-280px] xl:pl-[280px] lg:pl-[100px] overflow-auto">
+            <div class="mx-auto md:pt-6 pt-20"
+            :class="$page.url==='/'?'lg:w-8/12 w-full':'max-w-[1200px]'">
+                <main>
+                    <slot/>
+                </main>
             </div>
         </div>
     </div>
