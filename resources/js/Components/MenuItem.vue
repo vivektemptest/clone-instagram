@@ -34,31 +34,7 @@ if(iconString.value){
     icon = iconSearchValues[iconString.value];
 }
 
-switch (iconString.value) {
-    case "Home":
-        icon = HomeOutline;
-        break;
-    case "Search":
-        icon = Magnify;
-        break;
-    case "Home":
-        icon = HomeOutline;
-        break;
-    case "Home":
-        icon = HomeOutline;
-        break;
-    case "Home":
-        icon = HomeOutline;
-        break;
-    case "Home":
-        icon = HomeOutline;
-        break;
-    case "Home":
-        icon = HomeOutline;
-        break;
-    default:
-        break;
-}
+
 </script>
 
 <template>
